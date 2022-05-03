@@ -1,0 +1,277 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Medium Length Graduate Curriculum Vitae
+% LaTeX Template
+% Version 1.2 (3/28/15)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Rensselaer Polytechnic Institute
+% (http://www.rpi.edu/dept/arc/training/latex/resumes/)
+%
+% Modified by:
+% Daniel L Marks <xleafr@gmail.com> 3/28/2015
+%
+% Important note:
+% This template requires the res.cls file to be in the same directory as the
+% .tex file. The res.cls file provides the resume style used for structuring the
+% document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%-------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%-------------------------------------------------------------------------------
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% You can have multiple style options the legal options ones are:
+%
+%   centered:	the name and address are centered at the top of the page
+%				(default)
+%
+%   line:		the name is the left with a horizontal line then the address to
+%				the right
+%
+%   overlapped:	the section titles overlap the body text (default)
+%
+%   margin:		the section titles are to the left of the body text
+%
+%   11pt:		use 11 point fonts instead of 10 point fonts
+%
+%   12pt:		use 12 point fonts instead of 10 point fonts
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[margin]{res}
+
+\usepackage{textcomp}
+\usepackage[autostyle=false, style=english]{csquotes}
+
+% Default font is the helvetica postscript font
+\usepackage{helvet}
+
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=blue,
+    urlcolor=blue,
+}
+
+% Increase text height
+\textheight=700pt
+
+\begin{document}
+
+%-------------------------------------------------------------------------------
+%	NAME AND ADDRESS SECTION
+%-------------------------------------------------------------------------------
+\renewcommand*{\namefont}{\fontsize{14}{14}\mdseries\upshape\bf}
+\name{Changyeon Jo}
+
+% Note that addresses can be used for other contact information:
+% -phone numbers
+% -email addresses
+% -linked-in profile
+
+\address{Staff Engineer \\ Samsung Electronics \\ 34, Samsungjeonja-ro, Hwaseong-si, Republic of Korea}
+\address{\\ Email: changyeon.jj@gmail.com \\ Homepage: \href{https://changyeon.net}{http://changyeon.net}}
+%\address{Email: changyeon@csap.snu.ac.kr \\ Homepage: http://changyeon.net \\ Tel: +82 2 880 1819}
+
+%\address{Address 1 line 1\\Address 1 line 2\\Address 1 line 3}
+%\address{Address 2 line 1\\Address 2 line 2\\Address 2 line 3}
+
+% Uncomment to add a third address
+%\address{Address 3 line 1\\Address 3 line 2\\Address 3 line 3}
+%-------------------------------------------------------------------------------
+
+\begin{resume}
+
+%-------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%-------------------------------------------------------------------------------
+\section{WORK EXPERIENCE}
+\par
+\textbf{Samsung Electronics}, Hwaseong-si, South Korea \hfill Sep 2021 - Present \\
+\textit{Staff Engineer} \\
+Project: Big-data analytics platform for brand SSD diagnostic data. \\
+
+\vspace{-1.5em}
+\par
+\textbf{WorldQuant}, Seoul, South Korea \hfill Jun 2019 - Aug 2019 \\
+\textit{Research Consultant} \\
+Project: Equity price modeling and portfolio optimization. \\
+% Mentor: Junkyu Jeong \\
+
+%-------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%-------------------------------------------------------------------------------
+\vspace{-1.5em}
+\section{EDUCATION}
+\textbf{Seoul National University}, Seoul, South Korea \\
+{\sl M.S./Ph.D. Integrated Program} \hfill Mar 2012 - Aug 2021 \\
+Advisor: Prof. Bernhard Egger
+
+% As a graduate research assistant participated in various systems software research projects. The projects on virtualization, distributed systems, and ML for systems have been published in 10 research papers and cited 166 times. (Google Scholar, Dec 2020)
+
+\vspace{-0.5em}
+\textbf{Hanyang University}, Ansan, South Korea \\
+{\sl B.S.} in Computer Science \hfill Mar 2008 - Feb 2012 \\
+Thesis: \textit{Musical Chords Generation for Given Melody using Hidden Markov Model} \\
+Advisor: Prof. Jungsun Kim
+%-------------------------------------------------------------------------------
+
+%-------------------------------------------------------------------------------
+%	RESEARCH EXPERIENCE SECTION
+%-------------------------------------------------------------------------------
+\section{RESEARCH EXPERIENCE}
+\par
+\textbf{ETH Systems Group}, Z{\"u}rich, Switzerland \hfill Mar 2018 - Jun 2018 \\
+\textit{Visiting Ph.D. Student} \\
+Project: Adding modern x86 processor support to Barrelfish OS hypervisor. \\
+Advisor: Prof. Timothy Roscoe \\
+
+% Extend BarrelfishOS hypervisor to support modern x86 processor features to boot the latest x86-64 Linux image. This work has integrated as a part of BarrelfishOS.
+
+\vspace{-1.5em}
+\textbf{PLASSE Lab}, Hanyang University, Ansan, South Korea \hfill Jul 2010 - Jun 2011 \\
+\textit{Undergraduate Intern} \\
+Project: Survey on program analysis techniques. \\
+Advisor: Prof. Kyoung-Goo Doh \\
+
+%-------------------------------------------------------------------------------
+%	PROJECTS SECTION
+%-------------------------------------------------------------------------------
+\vspace{-1.2em}
+\section{PROJECTS}
+\par
+\textbf{Instant Virtual Machine Live Migration} \hfill 2020 - present \\
+Remote memory gives a unique optimization opportunity for virtual machine (VM) live migration by avoiding the entire memory copy. In this project, we develop a new VM live migration technique for remote memory environments. Our technique completes a VM migration in 100ms regardless of the workload running in the VM.
+
+\par
+\textbf{Remote Memory for Virtualized Environments} \hfill 2018 - 2020 \\
+Using remote memory for efficient resource utilization is rapidly getting attention with the rising popularity of high-performance network. In this project, we propose a tailored remote memory for virtualized environments. Our system reduces remote paging latency by 41.7x at the tail and improves job execution time by 3.5x under intensive remote paging scenarios.
+
+\par
+\textbf{Machine Learning Approach to Live Migration Modeling} \hfill 2015 - 2017 \\
+VM live migration is the foundation of seamless management of cloud services. However, it is notoriously difficult to predict its key performance metrics due to its complex behavior. In this project, we proposed a machine learning approach to live migration modeling. With the 40,000 VM live migration data, the trained model shows 2 to 5 times better prediction accuracy than the state-of-the-art analytical model.
+\\
+Project page: \href{https://csap.snu.ac.kr/software/lmdataset}{https://csap.snu.ac.kr/software/lmdataset}
+
+\newpage
+\par
+\textbf{Fast and Efficient Virtual Machine State Management} \hfill 2012 - 2015 \\
+VM state management is an essential feature for optimizing user experience in virtualized environments. In this project, we proposed a fast and space-efficient state management technique for checkpoint, restoration, and live migration. In the evaluation with real applications, we reduced the management overhead by 30\% on average. \\
+Project page: \href{https://csap.snu.ac.kr/software/xencheckpointing}{https://csap.snu.ac.kr/software/xencheckpointing}
+
+%\par
+%\textbf{Random Test Program Generator for CGRA Architectures} \hfill 2012 \\
+%Contributed to the early version of the random test program generator (RTPG) for coarse-grained reconfigurable architectures (CGRA). The RTPG found several bugs in the commercial Samsung Reconfigurable Processor (SRP).
+
+%-------------------------------------------------------------------------------
+%	PUBLICATION SECTION
+%-------------------------------------------------------------------------------
+\section{PUBLICATIONS}
+\par
+Younghyun Cho, Jiyeon Park, Florian Negele, \textbf{Changyeon Jo}, Thomas R. Gross, and Bernhard Egger. ``Dopia: Online Parallelism Management for Integrated CPU/GPU Architectures.'' \textit{In 27th ACM SIGPLAN Symposium on Principles and Practice of Parallel Programming (PPoPP\textquotesingle22)}, April 2-6, 2022, Seoul, Republic of Korea.
+
+\par
+Hyunik Kim, \textbf{Changyeon Jo}, and Bernhard Egger. ``RapidSwap: A Hierarchical Far Memory.'' \textit{Presented at the 18th International Conference on the Economics of Grids, Clouds, Systems and Services (GECON\textquotesingle21)}, Virtual Event, September 2021. In Lecture Notes in Computer Science (LNCS), Volume 13072, December 2021.
+
+\par
+Daon Park, Hyeonsoo Kim, \textbf{Changyeon Jo}, and Bernhard Egger. ``Can VM Live Migration Improve Job Throughput? Evidence from a Real World Cluster Trace'' \textit{Presented at the 18th International Conference on the Economics of Grids, Clouds, Systems and Services (GECON\textquotesingle21)}, Virtual Event, September 2021. In Lecture Notes in Computer Science (LNCS), Volume 13072, December 2021.
+
+\par
+\textbf{Changyeon Jo}, Hyunik Kim, Hexiang Geng, and Bernhard Egger. ``RackMem: A Tailored Caching Layer for Rack Scale Computing.'' \textit{In Proceedings of the 29th International Conference on Parallel Architectures and Compilation Techniques (PACT\textquotesingle20)}, Virtual Event, October 2020.
+
+\par
+\textbf{Changyeon Jo}, Hyunik Kim, and Bernhard Egger. ``Instant Virtual Machine Live Migration.'' \textit{In Proceedings of the 17th International Conference on the Economics of Grids Clouds, Systems and Services (GECON\textquotesingle20)}, Virtual Event, September 2020.
+
+\vspace{-0.5em}
+\par
+Youngsu Cho, \textbf{Changyeon Jo}, Hyunik Kim, and Bernhard Egger. ``Towards Economical Live Migration in Data Centers.'' \textit{In Proceedings of the 17th International Conference on the Economics of Grids Clouds, Systems and Services (GECON\textquotesingle20)}, Virtual Event, September 2020.
+
+\vspace{-0.5em}
+\par
+\textbf{Changyeon Jo}, Youngsu Cho, and Bernhard Egger. ``A Machine Learning Approach to Live Migration Modeling.'' \textit{In Proceedings of the 2017 ACM Symposium on Cloud Computing (SoCC\textquotesingle17)}, Santa Clara, USA, September 2017.
+
+\vspace{-0.5em}
+\par
+\textbf{Changyeon Jo}, Changmin Ahn, and Bernhard Egger. ``A Machine Learning-based Approach to Live Migration Modeling.'' Presented at the \textit{4th International Workshop on Efficient Data Center Systems (EDCS\textquotesingle16) co-located with ISCA'16}, Seoul, Korea, June 2016.
+
+\vspace{-0.5em}
+\par
+Bernhard Egger, Eunbyung Park, Younghyun Cho, \textbf{Changyeon Jo}, and Jaejin Lee. ``Efficient Checkpointing of Live Virtual Machines.'' In \textit{IEEE Transactions on Computers (TC), Volume 65, Issue 10, pp. 3041 - 3054}, January 2016.
+
+\par
+Bernhard Egger, Erik Gustafsson, \textbf{Changyeon Jo}, and Jeongseok Son. ``Efficiently restoring virtual machines.'' Presented at the \textit{IFIP International Conference on Network and Parallel Computing (NPC\textquotesingle2013)}, Guiyang, China, September 2013, in \textit{Springer International Journal of Parallel Programming (IJPP), Volume 43, Issue 3}, June 2015.
+
+\vspace{-0.5em}
+\par
+\textbf{Changyeon Jo} and Bernhard Egger. ``Optimizing Live Migration for Virtual Desktop Clouds.'' In \textit{Proceedings of the IEEE International Conference on Cloud Computing Technology and Science (CloudCom\textquotesingle2013)}, Bristol, UK, December 2013.
+
+\newpage
+
+\par
+\vspace{-1.0em}
+\textbf{Changyeon Jo}, Erik Gustafsson, Jeongseok Son, and Bernhard Egger. ``Efficient live migration of virtual machines using shared storage.'' In \textit{Proceedings of the ACM SIGPLAN/SIGOPS International Conference on Virtual Execution Environments (VEE\textquotesingle13)}, Houston, USA, March 2013.
+
+\vspace{-0.5em}
+\par
+Seonghun Jeong , Youngchul Cho, Daeyong Shin, \textbf{Changyeon Jo}, Yenjo Han, Soojung Ryu, Jeongwook Kim, and Bernhard Egger. ``Random Test Program Generation for Reconfigurable Architectures.'' In \textit{13th International Workshop on Microprocessor Test and Verification (MTV)}, Austin, USA, December 2012.
+
+%-------------------------------------------------------------------------------
+%	PATENT SECTION
+%-------------------------------------------------------------------------------
+% \vspace{-0.2em}
+% \section{PATENT}
+% \par
+% Seong-Hoon Jeong, Bernhard Egger, Daeyong Shin, and \textbf{Changyeon Jo}. ``Method for verification of reconfigurable processor'', September 6 2013. \textit{US Patent App. 14/020,061}, 2013
+
+%-------------------------------------------------------------------------------
+
+%-------------------------------------------------------------------------------
+%	GRANTS SECTION
+%-------------------------------------------------------------------------------
+\vspace{-0.2em}
+\section{GRANTS}
+\par
+Young Researchers Exchange Program between Korea and Switzerland, Swiss State Secretariat for Education, Research and Innovation (SERI), 2018 \\
+
+\vspace{-2.0em}
+ACM SIGMOD Travel Grants, ACM Symposium on Cloud Computing, 2017
+
+%-------------------------------------------------------------------------------
+%	TEACHING SECTION
+%-------------------------------------------------------------------------------
+%\section{TEACHING \\ EXPERIENCE}
+%\par
+% M1522.000800 System Programming, Seoul National University, TA \hfill 2018 Fall \\
+% M1522.000800 System Programming, Seoul National University, TA \hfill 2017 Fall \\
+% 4190.308 Computer Architecture, Seoul National University, TA \hfill 2017 Spring \\
+% 4190.203 System Programming, Seoul National University, TA \hfill 2015 Fall \\
+% 4190.308 Computer Architecture, Seoul National University, TA \hfill 2014 Fall \\
+% 4190.203 System Programming, Seoul National University, TA \hfill 2013 Spring \\
+% 4190.203 System Programming, Seoul National University, TA \hfill 2012 Fall \\
+% 4190.203 System Programming, Seoul National University, TA \hfill 2012 Spring \\
+
+%\newpage
+%-------------------------------------------------------------------------------
+%	SERVICES SECTION
+%-------------------------------------------------------------------------------
+\vspace{-0.2em}
+\section{PROFESSIONAL \\ SERVICES}
+\par
+Artifact Evaluation Committee, \textit{International Conference on Languages, Compilers, Tools and Theory of Embedded Systems (LCTES)}, 2019 \\
+
+\vspace{-2.0em}
+External Reviewer, \textit{IEEE Transactions on Cloud Computing}, 2015 \\
+
+\vspace{-1.0em}
+\section{SKILLS}
+\par
+C, C++, Python, RDMA, Linux kernel, QEMU/KVM, Xen, \\Spark, Pandas, Numpy, Matplotlib, Scikit-learn, and PyTorch
+
+\end{resume}
+\end{document}
