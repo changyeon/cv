@@ -21,7 +21,7 @@ own work, like the experience sections.
 *Nov 2022 – Present*
 * Led a team of 10 engineers responsible for system-level performance evaluation and validation of DPU products, with a focus on network scalability and throughput.
 * Directed the company's MLPerf Storage v1.0 and v2.0 benchmark submissions, demonstrating **6.2× higher GPU scalability** than competing solutions.
-* Expanded into AI infrastructure by architecting a GCP-based performance analytics platform for on-premise LLM inference services (**vLLM**, **SGLang**), leveraging GCS, BigQuery, and Dataform.
+* Expanded into AI infrastructure by architecting a GCP-based performance analytics platform for on-premise LLM inference services (**vLLM**, **SGLang**).
 * Earlier, developed host device drivers and system-level validation for an in-house RoCEv2 IP.
 
 **Samsung Electronics**, Hwaseong-si, South Korea — *Staff Engineer, Memory Software Development Team*  
