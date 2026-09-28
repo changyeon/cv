@@ -21,6 +21,7 @@ it individually would overstate one author's share.
 **MangoBoost Inc.**, Seoul, South Korea — *System Software Engineer*  
 *Nov 2022 – Present*
 * Lead a team of 10 engineers performing system-level performance evaluation and validation of DPU products, focusing on network scalability and throughput.
+* Lead the architecture of a cloud performance-analytics platform for a production LLM inference service (**vLLM**, **SGLang**) on on-premise GPU servers: designed a GCP bronze/silver/gold pipeline on GCS, BigQuery, and Dataform, and defined the production serving metrics, including TTFT, inter-token latency, tokens/s, and cache hit rate.
 * Led the company's MLPerf Storage benchmark submissions (v1.0, v2.0), achieving **6.2x higher GPU scalability** compared to competing solutions.
 * Developed the host device driver stack for an in-house RoCEv2 IP and built system-level validation for it in integrated environments.
 
@@ -209,7 +210,7 @@ External Reviewer, *IEEE Transactions on Cloud Computing*, 2015
 
 ## Domains
 
-RDMA networking and congestion control, collective communication libraries,
-memory and storage disaggregation, DPU and SmartNIC software stacks, Linux
-kernel, SPDK, virtualization, system performance engineering and benchmarking,
-machine learning for systems
+LLM inference serving (vLLM, SGLang), RDMA networking and congestion control,
+collective communication libraries, memory and storage disaggregation, DPU and
+SmartNIC software stacks, Linux kernel, SPDK, virtualization, system performance
+engineering and benchmarking, cloud data pipelines, ML for systems
