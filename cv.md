@@ -8,10 +8,9 @@ Kept in sync with cv.tex by hand. cv.tex is the source the PDF is built from;
 this file exists for reading on the web and for anything that wants plain text.
 If one changes, change the other.
 
-Voice differs by section on purpose. The experience sections describe what the
-author did, so they are active and first-person-implied. Research Projects keeps
-the "we" of the papers it summarises — that work was collaborative, and claiming
-it individually would overstate one author's share.
+All sections use the same voice: active and first-person-implied, with no "we".
+Research Projects were led by the author, so they are written as the author's
+own work, like the experience sections.
 -->
 
 ---
@@ -20,10 +19,10 @@ it individually would overstate one author's share.
 
 **MangoBoost Inc.**, Seoul, South Korea — *System Software Engineer*  
 *Nov 2022 – Present*
-* Lead a team of 10 engineers performing system-level performance evaluation and validation of DPU products, focusing on network scalability and throughput.
-* Lead the architecture of a cloud performance-analytics platform for a production LLM inference service (**vLLM**, **SGLang**) on on-premise GPU servers: designed a GCP bronze/silver/gold pipeline on GCS, BigQuery, and Dataform, and defined the production serving metrics, including TTFT, inter-token latency, tokens/s, and cache hit rate.
-* Led the company's MLPerf Storage benchmark submissions (v1.0, v2.0), achieving **6.2x higher GPU scalability** compared to competing solutions.
-* Developed the host device driver stack for an in-house RoCEv2 IP and built system-level validation for it in integrated environments.
+* Lead a team of 10 engineers responsible for system-level performance evaluation and validation of DPU products, with a focus on network scalability and throughput.
+* Directed the company's MLPerf Storage v1.0 and v2.0 benchmark submissions, demonstrating **6.2× higher GPU scalability** than competing solutions.
+* Expanding into AI infrastructure by architecting a GCP-based performance analytics platform for on-premise LLM inference services (**vLLM**, **SGLang**), leveraging GCS, BigQuery, and Dataform.
+* Earlier, developed host device drivers and system-level validation for an in-house RoCEv2 IP.
 
 **Samsung Electronics**, Hwaseong-si, South Korea — *Staff Engineer, Memory Software Development Team*  
 *Sep 2021 – Oct 2022*
@@ -65,22 +64,22 @@ it individually would overstate one author's share.
 ### Instant Virtual Machine Live Migration | *2018 – 2021*
 
 Placing a virtual machine (VM) on a shared memory pool eliminates the memory copy
-that dominates live migration cost. We propose an optimized VM live migration
+that dominates live migration cost. Proposed an optimized VM live migration
 technique for such RDMA-based remote memory environments, completing a migration
 in less than 100ms for memory-intensive workloads.
 
 ### Remote Memory for Virtualized Environments | *2018 – 2020*
 
 Memory fragmentation across nodes leaves capacity unused, and a workload that does
-not fit in local memory falls back to disk. We built a software-based memory pool for
+not fit in local memory falls back to disk. Built a software-based memory pool for
 virtualized environments, letting nodes share memory across an InfiniBand fabric
-via RDMA NICs. Our system reduced remote paging latency by 41.7x at the tail and
+via RDMA NICs. The system reduced remote paging latency by 41.7x at the tail and
 improved job execution time by 3.5x under intensive remote paging scenarios.
 
 ### Machine Learning Approach to Live Migration Modeling | *2015 – 2017*
 
 Predicting the key performance metrics of VM live migration is notoriously
-difficult due to its complex behavior. We proposed a machine learning approach to
+difficult due to its complex behavior. Proposed a machine learning approach to
 live migration modeling; trained on 40,000 migration records, the model showed
 2 to 5 times better prediction accuracy than the state-of-the-art analytical
 model.
@@ -90,7 +89,7 @@ Project page: <https://csap.snu.ac.kr/software/lmdataset>
 
 ### VM Checkpoint, Restoration and Live Migration Techniques | *2012 – 2015*
 
-We proposed fast and space efficient techniques for VM checkpoint, restoration,
+Proposed fast and space efficient techniques for VM checkpoint, restoration,
 and live migration, reducing VM management overheads by 30% on average in the
 evaluation with real applications.
 The resulting paper has been cited over 100 times.
@@ -101,10 +100,10 @@ Project page: <https://csap.snu.ac.kr/software/xencheckpointing>
 
 ## Publications
 
-Kanghyun Choi, Bogyeong Park, Gihwan Lee, Hanmin Kim, Nayeon Kim, Chanmyeong
-Kim, Hyeonseong Choi, Dongjoo Lee, Jaehyun Lee, Eunjin Baek, Changsu Kim,
-**Changyeon Jo**, Minho Chu, and Jangwoo Kim. "MangoBoost FORMULA: A Fast,
-Scalable and Flexible AI RNIC." *In the 59th IEEE/ACM International Symposium on
+Kanghyun Choi, Bogyeong Park, Gihwan Lee, Eunjin Baek, Changsu Kim, Hanmin Kim,
+Nayeon Kim, **Changyeon Jo**, Chanmyeong Kim, Hyeonseong Choi, Dongjoo Lee,
+Jaehyun Lee, Minho Chu, and Jangwoo Kim. "BoostX-RNIC: Fast, Scalable and
+Flexible AI RNIC." *In the 59th IEEE/ACM International Symposium on
 Microarchitecture (MICRO'26), Industry Track*, Athens, Greece, 2026. To appear.
 
 Youngsu Cho, **Changyeon Jo**, Reza Entezari-Maleki, Jörn Altmann, and Bernhard

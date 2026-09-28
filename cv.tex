@@ -121,17 +121,16 @@ Homepage: \href{https://changyeon.net}{https://changyeon.net}}
 \par
 \textbf{MangoBoost Inc.}, Seoul, South Korea \hfill Nov 2022 - Present \\
 \textit{System Software Engineer} \\
-Lead a team of 10 engineers performing system-level performance evaluation and
-validation of DPU products, focusing on network scalability and throughput.
-Lead the architecture of a cloud performance-analytics platform for a
-production LLM inference service (vLLM, SGLang) on on-premise GPU servers:
-designed a GCP bronze/silver/gold pipeline on GCS, BigQuery, and Dataform, and
-defined the production serving metrics, including TTFT, inter-token latency,
-tokens/s, and cache hit rate.
-Led the company's MLPerf Storage benchmark submissions (v1.0, v2.0), achieving
-6.2x higher GPU scalability compared to competing solutions.
-Developed the host device driver stack for an in-house RoCEv2 IP and built
-system-level validation for it in integrated environments.
+Lead a team of 10 engineers responsible for system-level performance evaluation
+and validation of DPU products, with a focus on network scalability and
+throughput.
+Directed the company's MLPerf Storage v1.0 and v2.0 benchmark submissions,
+demonstrating 6.2$\times$ higher GPU scalability than competing solutions.
+Expanding into AI infrastructure by architecting a GCP-based performance
+analytics platform for on-premise LLM inference services (vLLM, SGLang),
+leveraging GCS, BigQuery, and Dataform.
+Earlier, developed host device drivers and system-level validation for an
+in-house RoCEv2~IP.
 
 \vspace{-0.5em}
 \par
@@ -196,7 +195,7 @@ Advisor: Prof. Kyoung-Goo Doh \\
 \par
 \textbf{Instant Virtual Machine Live Migration} \hfill 2018 - 2021 \\
 Placing a virtual machine (VM) on a shared memory pool eliminates the memory copy
-that dominates live migration cost. We propose an optimized VM live migration
+that dominates live migration cost. Proposed an optimized VM live migration
 technique for such RDMA-based remote memory environments, completing a migration
 in less than 100ms for memory-intensive workloads.
 
@@ -204,16 +203,16 @@ in less than 100ms for memory-intensive workloads.
 \par
 \textbf{Remote Memory for Virtualized Environments} \hfill 2018 - 2020 \\
 Memory fragmentation across nodes leaves capacity unused, and a workload that does
-not fit in local memory falls back to disk. We built a software-based memory pool for
+not fit in local memory falls back to disk. Built a software-based memory pool for
 virtualized environments, letting nodes share memory across an InfiniBand fabric
-via RDMA NICs. Our system reduced remote paging latency by 41.7x at the tail and
+via RDMA NICs. The system reduced remote paging latency by 41.7x at the tail and
 improved job execution time by 3.5x under intensive remote paging scenarios.
 
 \vspace{-0.5em}
 \par
 \textbf{Machine Learning Approach to Live Migration Modeling} \hfill 2015 - 2017 \\
 Predicting the key performance metrics of VM live migration is notoriously
-difficult due to its complex behavior. We proposed a machine learning approach to
+difficult due to its complex behavior. Proposed a machine learning approach to
 live migration modeling; trained on 40,000 migration records, the model showed
 2 to 5 times better prediction accuracy than the state-of-the-art analytical
 model.
@@ -224,7 +223,7 @@ Project page: \href{https://csap.snu.ac.kr/software/lmdataset}{https://csap.snu.
 \vspace{-0.5em}
 \par
 \textbf{VM Checkpoint, Restoration and Live Migration Techniques} \hfill 2012 - 2015 \\
-We proposed fast and space efficient techniques for VM checkpoint, restoration,
+Proposed fast and space efficient techniques for VM checkpoint, restoration,
 and live migration, reducing VM management overheads by 30\% on average in the
 evaluation with real applications.
 The resulting paper has been cited over 100 times. \\
@@ -245,7 +244,7 @@ Project page: \href{https://csap.snu.ac.kr/software/xencheckpointing}{https://cs
 % a paragraph, so an entry moves to the next page rather than being split across
 % one — a citation cut in half mid-venue reads as a layout error.
 \interlinepenalty=10000
-Kanghyun Choi, Bogyeong Park, Gihwan Lee, Hanmin Kim, Nayeon Kim, Chanmyeong Kim, Hyeonseong Choi, Dongjoo Lee, Jaehyun Lee, Eunjin Baek, Changsu Kim, \textbf{Changyeon Jo}, Minho Chu, and Jangwoo Kim. ``MangoBoost FORMULA: A Fast, Scalable and Flexible AI RNIC.'' \textit{In the 59th IEEE/ACM International Symposium on Microarchitecture (MICRO\textquotesingle26), Industry Track}, Athens, Greece, 2026. To appear.
+Kanghyun Choi, Bogyeong Park, Gihwan Lee, Eunjin Baek, Changsu Kim, Hanmin Kim, Nayeon Kim, \textbf{Changyeon Jo}, Chanmyeong Kim, Hyeonseong Choi, Dongjoo Lee, Jaehyun Lee, Minho Chu, and Jangwoo Kim. ``BoostX-RNIC: Fast, Scalable and Flexible AI RNIC.'' \textit{In the 59th IEEE/ACM International Symposium on Microarchitecture (MICRO\textquotesingle26), Industry Track}, Athens, Greece, 2026. To appear.
 
 \vspace{-0.5em}
 Youngsu Cho, \textbf{Changyeon Jo}, Reza Entezari-Maleki, J{\"o}rn Altmann, and Bernhard Egger. ``Towards Smarter Live Migration: Minimizing SLO Violations and Costs.'' In \textit{Future Generation Computer Systems, Volume 175, 108085}, 2026.
